@@ -1,15 +1,16 @@
 pipeline {
     agent any
-    
+
     stages {
-        stage('Build') {
+        stage('Build Docker Image') {
             steps {
-                // Your build steps here
-                echo "this is build step"
-                sh "docker build -t toto ." 
-                
+                script {
+                    docker.withRegistry('https://hub.docker.com/repository/docker/karamfile/publicrepo/general', 'karamayoussef98') {
+                        def dockerImage = docker.build('my-image-name')
+                        dockerImage.push()
+                    }
+                }
             }
         }
-     
     }
 }
