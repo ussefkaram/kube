@@ -6,5 +6,5 @@ COPY . .
 
 EXPOSE 1010
 
-CMD [ "pythin" , "app.py" ]
+CMD [ "python" , "app.py" ]
 
