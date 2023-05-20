@@ -1,1 +1,1 @@
-print("test my skills in docker,jenkins,kubernites  hhhh ")
+print("test my skillss in docker,jenkins,kubernites  hhhh ")
