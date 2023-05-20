@@ -9,13 +9,6 @@ pipeline {
                 docker build -t KARAMIMAGE .
             }
         }
-        stage('Push') {
-            steps {
-                //my push 
-
-                echo "pushing image"
-                docker push karamfile/test_repo:KARAMIMAGE
-            }
-        }
+     
     }
 }
