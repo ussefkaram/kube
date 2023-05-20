@@ -6,7 +6,7 @@ pipeline {
             steps {
                 // Your build steps here
                 echo "this is build step"
-                docker build -t KARAMIMAGE .
+                
             }
         }
      
